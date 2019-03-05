@@ -1,69 +1,7 @@
-# Project_1_R-P
-This is the public repository owned by Rushi James Macwan and Poorn Mehta for the ECEN 5813 (Fall-2018) Project 1. Currently working on Sprint 1. Access from linux.
+# PESF18_Projects [Fall-2018]
 
-Some information regarding Sprint 1:
+This repository is fully owned by **Rushi James Macwan** and **Poorn Mehta**. All content on this repository is solely the work of **Rushi James Macwan** and **Poorn Mehta**. However, all external support and guidance taken in completing the work available on this repository has been clearly cited and credited as per the course guidelines.
 
-In this Github repository, we have tried to incorporate the basic features for the user as were discussed in the class. On executing the Project_1 file in the command window on Linux, we are able to provide the user with a welcome statement followed by a prompt to seek help. If the user puts a valid keyword (at this stage the user is only expected to type "help" or "help.exit" as valid keywords) then the executable program returns more information on the keyword which can be an executable instruction or a piece of necessary information depending upon the type of the application. If the user enters an invalid keyword then the system will return a response stating the entered keyword as invalid. Furthermore, if the user enters "help.exit" as the keyword then the system responds with a message on further steps to end the execution of the make file. To end this execution, the user can simply enter "exit" as the keyword which brings the user back to the command window operations considering that the while loop is exited.
+**This repository contains all the Principles of Embedded Software (ECEN 5813) lab submissions made by Rushi James Macwan and Poorn Mehta. The content on this repository should not be used for any purpose without acquiring prior permission from the owner. Rushi James Macwan and Poorn Mehta are not liable for any misuse of the content available on this repository.** 
 
-Thanks.
-
-Sincerely,
-
-Team (Rushi and Poorn)
-
-Update - 1PM - 10/4/2018
-
-Everything is working perfectly on terminal as well as windows IDE. Only patternverify function is yet to deploy. Time was consumed in developing a smooth User Interface. 
-
-Update on Project as of 10/4/2018
-
-2 things are yet to implement - pattern verify and bound checking. Raw functions are ready.
-
-Every other functions works perfectly in Windows Dev C (gcc) however, in linux,
-it throws an error - segmentation fault (core dumped) - we have no idea about this. 
-Currently, we are trying to resolve this error. Once it is solved, we will integrate
-bound checking and pattern verify.
-
-It tooks us this much of time because the user interface is pretty decent. 
-
-It accepts only valid arguments in all input cases (rejecting non decimal, non hex values, commands with extra or less parameters, misspellings etc.)
-
-Also, it accepts arguments and commands in two formats:
-(1) If you just type command which accepts arguments, and then press enter, it will keep on prompting until it has received all valid parameters
-(2) You can even call the function with parameters, by simply putting space in between - such as memwrite <address> <value>
-
---------------------------------------------------------------------------------------------------------------------------
-Before 11.59 PM as on 10/4/2018:
-
-We have overcome all the previous limitations and have implemented extended UI functionalities which are not limited to but are inclusive of the following:
-
-1. Memory allocation
-2. Memory freeing
-3. Memory read
-4. Memory write
-5. Memory inversion
-6. Pattern generation
-7. Pattern verification
-8. (Internal function) Time measurement in all major executions
-9. (Internal function) Boundary check
-10. (Internal function) Null-pointer check
-11. (Internal function) Pre-clearing of pointer after memory allocation
-12. (Internal function) Error-checks for user-specified data entry
-
-(Extended functionalities that we may include as soon as possible:)
-
-1. Memory clear operation
-2. Memory Swap Function
-3. Memory Reallocation (Memory free + Memory allocation + Memory clear operation)
-4. Memory Copy Function
-5. Memory Math Operations
-6. Memory Math Lighthouse Function (provides results for all the math operations for two data points and stores at two user-specified addresses within the allocated spectrum)
-7. Memory Statistical Operations in real-time (performs various statistical measurements upon successful operation of either Memory Math Operations or Memory Math Lighthouse Function)
-
-This is the brief and concise report on our existing status.
-
-Thanks.
-
-Sincerely,
-
-Team (Rushi & Poorn)
+Thank you.
