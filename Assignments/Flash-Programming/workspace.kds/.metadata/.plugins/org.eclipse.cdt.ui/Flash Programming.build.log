@@ -1,0 +1,11 @@
+22:15:09 **** Incremental Build of configuration Debug for project Flash Programming ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "Flash Programming.elf"
+   text	   data	    bss	    dec	    hex	filename
+    872	    108	   2084	   3064	    bf8	Flash Programming.elf
+Finished building: Flash Programming.siz
+ 
+
+22:15:10 Build Finished (took 354ms)
+

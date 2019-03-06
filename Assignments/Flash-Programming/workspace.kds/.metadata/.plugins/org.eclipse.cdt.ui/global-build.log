@@ -1,0 +1,285 @@
+11:59:19 **** Build of configuration Debug for project Flash Programming ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL25Z128VLK4" -I"../Sources" -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL25Z4/include" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building file: ../Project_Settings/Startup_Code/startup.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL25Z128VLK4" -I"../Sources" -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL25Z4/include" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/startup.d" -MT"Project_Settings/Startup_Code/startup.o" -c -o "Project_Settings/Startup_Code/startup.o" "../Project_Settings/Startup_Code/startup.c"
+Finished building: ../Project_Settings/Startup_Code/startup.c
+ 
+Building file: ../Project_Settings/Startup_Code/startup_MKL25Z4.S
+Invoking: Cross ARM GNU Assembler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -x assembler-with-cpp -MMD -MP -MF"Project_Settings/Startup_Code/startup_MKL25Z4.d" -MT"Project_Settings/Startup_Code/startup_MKL25Z4.o" -c -o "Project_Settings/Startup_Code/startup_MKL25Z4.o" "../Project_Settings/Startup_Code/startup_MKL25Z4.S"
+Finished building: ../Project_Settings/Startup_Code/startup_MKL25Z4.S
+ 
+Building file: ../Project_Settings/Startup_Code/system_MKL25Z4.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -D"CPU_MKL25Z128VLK4" -I"../Sources" -I"../Project_Settings/Startup_Code" -I"../SDK/platform/CMSIS/Include" -I"../SDK/platform/devices" -I"../SDK/platform/devices/MKL25Z4/include" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/system_MKL25Z4.d" -MT"Project_Settings/Startup_Code/system_MKL25Z4.o" -c -o "Project_Settings/Startup_Code/system_MKL25Z4.o" "../Project_Settings/Startup_Code/system_MKL25Z4.c"
+Finished building: ../Project_Settings/Startup_Code/system_MKL25Z4.c
+ 
+Building target: Flash Programming.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g3 -T "MKL25Z128xxx4_flash.ld" -Xlinker --gc-sections -L"C:/Users/rualjim/workspace.kds/Flash Programming/Project_Settings/Linker_Files" -Wl,-Map,"Flash Programming.map" -specs=nosys.specs -specs=nano.specs -Xlinker -z -Xlinker muldefs -o "Flash Programming.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup.o ./Project_Settings/Startup_Code/startup_MKL25Z4.o ./Project_Settings/Startup_Code/system_MKL25Z4.o   
+Finished building target: Flash Programming.elf
+ 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "Flash Programming.elf"
+   text	   data	    bss	    dec	    hex	filename
+    872	    108	   2084	   3064	    bf8	Flash Programming.elf
+Finished building: Flash Programming.siz
+ 
+20:24:23 **** Incremental Build of configuration Debug for project Flash Programming ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "Flash Programming.elf"
+Command canceled
+21:36:50 **** Build of configuration Debug for project Flash Programming ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "Flash Programming.elf"
+   text	   data	    bss	    dec	    hex	filename
+    872	    108	   2084	   3064	    bf8	Flash Programming.elf
+Finished building: Flash Programming.siz
+ 
+21:36:50 **** Build of configuration debug for project flash_demo_frdmkl25z ****
+make -k all 
+Building file: C:/Freescale/KSDK_1.3.0/platform/utilities/src/fsl_debug_console.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"utilities/fsl_debug_console.d" -MT"utilities/fsl_debug_console.o" -c -o "utilities/fsl_debug_console.o" "C:/Freescale/KSDK_1.3.0/platform/utilities/src/fsl_debug_console.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/utilities/src/fsl_debug_console.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/utilities/src/fsl_misc_utilities.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"utilities/fsl_misc_utilities.d" -MT"utilities/fsl_misc_utilities.o" -c -o "utilities/fsl_misc_utilities.o" "C:/Freescale/KSDK_1.3.0/platform/utilities/src/fsl_misc_utilities.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/utilities/src/fsl_misc_utilities.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/utilities/src/print_scan.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"utilities/print_scan.d" -MT"utilities/print_scan.o" -c -o "utilities/print_scan.o" "C:/Freescale/KSDK_1.3.0/platform/utilities/src/print_scan.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/utilities/src/print_scan.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/devices/startup.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"startup/startup.d" -MT"startup/startup.o" -c -o "startup/startup.o" "C:/Freescale/KSDK_1.3.0/platform/devices/startup.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/devices/startup.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/devices/MKL25Z4/startup/gcc/startup_MKL25Z4.S
+Invoking: Cross ARM GNU Assembler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -x assembler-with-cpp -DDEBUG -fno-common  -ffunction-sections  -fdata-sections  -ffreestanding  -fno-builtin  -mapcs  -std=gnu99 -MMD -MP -MF"startup/startup_MKL25Z4.d" -MT"startup/startup_MKL25Z4.o" -c -o "startup/startup_MKL25Z4.o" "C:/Freescale/KSDK_1.3.0/platform/devices/MKL25Z4/startup/gcc/startup_MKL25Z4.S"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/devices/MKL25Z4/startup/gcc/startup_MKL25Z4.S
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/devices/MKL25Z4/startup/system_MKL25Z4.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"startup/system_MKL25Z4.d" -MT"startup/system_MKL25Z4.o" -c -o "startup/system_MKL25Z4.o" "C:/Freescale/KSDK_1.3.0/platform/devices/MKL25Z4/startup/system_MKL25Z4.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/devices/MKL25Z4/startup/system_MKL25Z4.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/demo_apps/flash_demo/flash_swap.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"source/flash_swap.d" -MT"source/flash_swap.o" -c -o "source/flash_swap.o" "C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/demo_apps/flash_demo/flash_swap.c"
+Finished building: C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/demo_apps/flash_demo/flash_swap.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/demo_apps/flash_demo/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"source/main.d" -MT"source/main.o" -c -o "source/main.o" "C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/demo_apps/flash_demo/main.c"
+Finished building: C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/demo_apps/flash_demo/main.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/CopyToRam.d" -MT"flash/CopyToRam.o" -c -o "flash/CopyToRam.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/CopyToRam.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/DEFlashPartition.d" -MT"flash/DEFlashPartition.o" -c -o "flash/DEFlashPartition.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/DEFlashPartition.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/DFlashGetProtection.d" -MT"flash/DFlashGetProtection.o" -c -o "flash/DFlashGetProtection.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashGetProtection.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/DFlashSetProtection.d" -MT"flash/DFlashSetProtection.o" -c -o "flash/DFlashSetProtection.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/DFlashSetProtection.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/EEEWrite.d" -MT"flash/EEEWrite.o" -c -o "flash/EEEWrite.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/EEEWrite.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/EERAMGetProtection.d" -MT"flash/EERAMGetProtection.o" -c -o "flash/EERAMGetProtection.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMGetProtection.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/EERAMSetProtection.d" -MT"flash/EERAMSetProtection.o" -c -o "flash/EERAMSetProtection.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/EERAMSetProtection.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashCheckSum.d" -MT"flash/FlashCheckSum.o" -c -o "flash/FlashCheckSum.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCheckSum.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashCommandSequence.d" -MT"flash/FlashCommandSequence.o" -c -o "flash/FlashCommandSequence.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashCommandSequence.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashEraseAllBlock.d" -MT"flash/FlashEraseAllBlock.o" -c -o "flash/FlashEraseAllBlock.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseAllBlock.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashEraseBlock.d" -MT"flash/FlashEraseBlock.o" -c -o "flash/FlashEraseBlock.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseBlock.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashEraseResume.d" -MT"flash/FlashEraseResume.o" -c -o "flash/FlashEraseResume.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseResume.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashEraseSector.d" -MT"flash/FlashEraseSector.o" -c -o "flash/FlashEraseSector.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSector.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashEraseSuspend.d" -MT"flash/FlashEraseSuspend.o" -c -o "flash/FlashEraseSuspend.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashEraseSuspend.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashGetSecurityState.d" -MT"flash/FlashGetSecurityState.o" -c -o "flash/FlashGetSecurityState.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashGetSecurityState.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashInit.d" -MT"flash/FlashInit.o" -c -o "flash/FlashInit.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashInit.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashProgram.d" -MT"flash/FlashProgram.o" -c -o "flash/FlashProgram.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgram.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashProgramCheck.d" -MT"flash/FlashProgramCheck.o" -c -o "flash/FlashProgramCheck.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramCheck.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashProgramOnce.d" -MT"flash/FlashProgramOnce.o" -c -o "flash/FlashProgramOnce.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramOnce.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashProgramSection.d" -MT"flash/FlashProgramSection.o" -c -o "flash/FlashProgramSection.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashProgramSection.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashReadOnce.d" -MT"flash/FlashReadOnce.o" -c -o "flash/FlashReadOnce.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadOnce.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashReadResource.d" -MT"flash/FlashReadResource.o" -c -o "flash/FlashReadResource.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashReadResource.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashSecurityBypass.d" -MT"flash/FlashSecurityBypass.o" -c -o "flash/FlashSecurityBypass.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashSecurityBypass.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashVerifyAllBlock.d" -MT"flash/FlashVerifyAllBlock.o" -c -o "flash/FlashVerifyAllBlock.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyAllBlock.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashVerifyBlock.d" -MT"flash/FlashVerifyBlock.o" -c -o "flash/FlashVerifyBlock.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifyBlock.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/FlashVerifySection.d" -MT"flash/FlashVerifySection.o" -c -o "flash/FlashVerifySection.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/FlashVerifySection.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/PFlashGetProtection.d" -MT"flash/PFlashGetProtection.o" -c -o "flash/PFlashGetProtection.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashGetProtection.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/PFlashSetProtection.d" -MT"flash/PFlashSetProtection.o" -c -o "flash/PFlashSetProtection.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSetProtection.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/PFlashSwap.d" -MT"flash/PFlashSwap.o" -c -o "flash/PFlashSwap.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwap.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/PFlashSwapCtl.d" -MT"flash/PFlashSwapCtl.o" -c -o "flash/PFlashSwapCtl.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/PFlashSwapCtl.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"flash/SetEEEEnable.d" -MT"flash/SetEEEEnable.o" -c -o "flash/SetEEEEnable.o" "C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c"
+Finished building: C:/Freescale/KSDK_1.3.0/platform/drivers/src/flash/C90TFS/drvsrc/source/SetEEEEnable.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/board.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"board/board.d" -MT"board/board.o" -c -o "board/board.o" "C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/board.c"
+Finished building: C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/board.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/gpio_pins.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"board/gpio_pins.d" -MT"board/gpio_pins.o" -c -o "board/gpio_pins.o" "C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/gpio_pins.c"
+Finished building: C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/gpio_pins.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/demo_apps/flash_demo/hardware_init.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"board/hardware_init.d" -MT"board/hardware_init.o" -c -o "board/hardware_init.o" "C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/demo_apps/flash_demo/hardware_init.c"
+Finished building: C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/demo_apps/flash_demo/hardware_init.c
+ 
+Building file: C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/pin_mux.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -Wall  -g -DDEBUG -DCPU_MKL25Z128VLK4 -DFRDM_KL25Z -DFREEDOM -I../../../../../../platform/osa/inc -I../../../../../../platform/utilities/inc -I../../../../../../platform/CMSIS/Include -I../../../../../../platform/devices -I../../../../../../platform/devices/MKL25Z4/include -I../../../../../../platform/devices/MKL25Z4/startup -I../../../../../../platform/hal/inc -I../../../../../../platform/drivers/inc -I../../../../../../platform/system/inc -I../../../../../../platform/drivers/src/flash/C90TFS/drvsrc/include -I../.. -I../../../.. -std=gnu99 -fno-common  -ffreestanding  -fno-builtin  -mapcs -MMD -MP -MF"board/pin_mux.d" -MT"board/pin_mux.o" -c -o "board/pin_mux.o" "C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/pin_mux.c"
+Finished building: C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/pin_mux.c
+ 
+make: *** No rule to make target 'C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/demo_apps/flash_demo/kds/../../../../../lib/ksdk_platform_lib/kds/KL25Z4/debug/libksdk_platform.a', needed by 'flash_demo_frdmkl25z.elf'.
+make: Target 'all' not remade because of errors.
+22:15:03 **** Incremental Build of configuration Debug for project Flash Programming ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "Flash Programming.elf"
+   text	   data	    bss	    dec	    hex	filename
+    872	    108	   2084	   3064	    bf8	Flash Programming.elf
+Finished building: Flash Programming.siz
+ 
+22:15:09 **** Incremental Build of configuration Debug for project Flash Programming ****
+make all 
+Invoking: Cross ARM GNU Print Size
+arm-none-eabi-size --format=berkeley "Flash Programming.elf"
+   text	   data	    bss	    dec	    hex	filename
+    872	    108	   2084	   3064	    bf8	Flash Programming.elf
+Finished building: Flash Programming.siz
+ 
+22:15:10 **** Incremental Build of configuration debug for project flash_demo_frdmkl25z ****
+make -k all 
+make: *** No rule to make target 'C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/demo_apps/flash_demo/kds/../../../../../lib/ksdk_platform_lib/kds/KL25Z4/debug/libksdk_platform.a', needed by 'flash_demo_frdmkl25z.elf'.
+make: Target 'all' not remade because of errors.

@@ -1,0 +1,7 @@
+22:15:10 **** Incremental Build of configuration debug for project flash_demo_frdmkl25z ****
+make -k all 
+make: *** No rule to make target 'C:/Freescale/KSDK_1.3.0/examples/frdmkl25z/demo_apps/flash_demo/kds/../../../../../lib/ksdk_platform_lib/kds/KL25Z4/debug/libksdk_platform.a', needed by 'flash_demo_frdmkl25z.elf'.
+make: Target 'all' not remade because of errors.
+
+22:15:11 Build Finished (took 486ms)
+
